@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const fs = require("fs");
 
 router.get("/insertAllGoodsInfo", async (ctx) => {
-  fs.readFile("../fs/newGoods.json", "utf8", (err, data) => {
+  fs.readFile("./newGoods.json", "utf-8", (err, data) => {
     data = JSON.parse(data);
     let saveCount = 0;
     const Goods = mongoose.model("Goods");

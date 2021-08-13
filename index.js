@@ -28,7 +28,7 @@ app.use(router.allowedMethods());
 
   // mongoose插入一条数据的格式
   const User = mongoose.model("User"); // 创建一个模型
-  let oneUser = new User({ userName: "jspang90", password: "123456" }); // 在User这个模型中插入数据
+  let oneUser = new User({ userName: "jspang100", password: "123456" }); // 在User这个模型中插入数据
   oneUser.save().then(() => {
     // 保存
     console.log("插入成功");
